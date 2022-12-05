@@ -7,7 +7,7 @@ Public Class KullanıcıGirisEkranı
     Private Sub Cancel_Click(sender As Object, e As EventArgs) Handles Cancel.Click
         Me.Close()
     End Sub
-    Private Hak As Integer = 3
+
 
 
     Private Sub Tamam_Clik(sender As Object, e As EventArgs) Handles Tamam.Click
