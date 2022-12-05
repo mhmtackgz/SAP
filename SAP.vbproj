@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC54EE02-F8F1-42A1-89BF-27A54F2FB1A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SAP.My.MyApplication</StartupObject>
+    <RootNamespace>SAP</RootNamespace>
+    <AssemblyName>SAP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SAP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Base, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Pdf, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine, Version=20.0.81.0, Culture=neutral, PublicKeyToken=e92353a6bf73fffc, processorArchitecture=MSIL">
+      <HintPath>..\packages\EO.Pdf.20.0.81\lib\EO.WebEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.Designer.vb">
+      <DependentUpon>AnaForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnaForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AylıkCiroForm.Designer.vb">
+      <DependentUpon>AylıkCiroForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AylıkCiroForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KesilenFaturaDetay.Designer.vb">
+      <DependentUpon>KesilenFaturaDetay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KesilenFaturaDetay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KesilenTaxFreeForm.Designer.vb">
+      <DependentUpon>KesilenTaxFreeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KesilenTaxFreeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGirisEkranı.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullanıcıGirisEkranı.Designer.vb">
+      <DependentUpon>KullanıcıGirisEkranı.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersonelKayıtlarıGoruntule.Designer.vb">
+      <DependentUpon>PersonelKayıtlarıGoruntule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayıtlarıGoruntule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatısTutarForm.Designer.vb">
+      <DependentUpon>SatısTutarForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SatısTutarForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokÜrünEkleGörüntüleForm.Designer.vb">
+      <DependentUpon>StokÜrünEkleGörüntüleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StokÜrünEkleGörüntüleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeriTabaniBağlantiModül.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AylıkCiroForm.resx">
+      <DependentUpon>AylıkCiroForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KesilenFaturaDetay.resx">
+      <DependentUpon>KesilenFaturaDetay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KesilenTaxFreeForm.resx">
+      <DependentUpon>KesilenTaxFreeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullanıcıGirisEkranı.resx">
+      <DependentUpon>KullanıcıGirisEkranı.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayıtlarıGoruntule.resx">
+      <DependentUpon>PersonelKayıtlarıGoruntule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatısTutarForm.resx">
+      <DependentUpon>SatısTutarForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokÜrünEkleGörüntüleForm.resx">
+      <DependentUpon>StokÜrünEkleGörüntüleForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\Paomedia-Small-N-Flat-Shop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\addnew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\tik-işareti-4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\Users-Administrator-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\pexels-photo-952670.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NewFolder1\pexels-photo-220182.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
